@@ -1,0 +1,13 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: pubsub-sample
+spec:
+  sourceFormat: unstructured
+  git:
+    repo: https://github.com/karlkfi/acm-examples-pubsub-sample
+    revision: HEAD
+    branch: master
+    dir: "deploy/clusters/cluster-east/namespaces/pubsub-sample"
+    auth: none
