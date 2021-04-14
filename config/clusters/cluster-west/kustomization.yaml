@@ -4,5 +4,6 @@ resources:
 - ../../common/
 - ../../common/namespaces/kube-system/
 - ../../common/namespaces/custom-metrics/
+- namespaces/pubsub-sample/
 commonLabels:
   cluster: cluster-west
