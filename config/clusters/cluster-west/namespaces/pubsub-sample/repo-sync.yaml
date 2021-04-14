@@ -8,6 +8,6 @@ spec:
   git:
     repo: https://github.com/karlkfi/acm-examples-pubsub-sample
     revision: HEAD
-    branch: master
+    branch: main
     dir: "deploy/clusters/cluster-west/namespaces/pubsub-sample"
     auth: none
