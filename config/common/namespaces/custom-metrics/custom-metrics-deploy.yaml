@@ -62,3 +62,5 @@ kind: ServiceAccount
 metadata:
   name: custom-metrics-stackdriver-adapter
   namespace: custom-metrics
+  annotations:
+    iam.gke.io/gcp-service-account: custom-metrics-adapter@example-platform-1234.iam.gserviceaccount.com

@@ -17,6 +17,8 @@ metadata:
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  annotations:
+    iam.gke.io/gcp-service-account: custom-metrics-adapter@example-platform-1234.iam.gserviceaccount.com
   labels:
     cluster: cluster-west
     owner: platform-team
