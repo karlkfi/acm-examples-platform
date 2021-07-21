@@ -3,6 +3,7 @@ kind: RepoSync
 metadata:
   labels:
     cluster: cluster-west
+    owner: platform-team
   name: repo-sync
   namespace: zoneprinter
 spec:
