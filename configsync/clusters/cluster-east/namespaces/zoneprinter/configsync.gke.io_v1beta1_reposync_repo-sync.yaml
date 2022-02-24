@@ -1,0 +1,13 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: zoneprinter
+spec:
+  git:
+    auth: none
+    branch: main
+    dir: configsync/clusters/cluster-east/namespaces/zoneprinter
+    repo: https://github.com/karlkfi/acm-examples-zoneprinter/
+    revision: HEAD
+  sourceFormat: unstructured

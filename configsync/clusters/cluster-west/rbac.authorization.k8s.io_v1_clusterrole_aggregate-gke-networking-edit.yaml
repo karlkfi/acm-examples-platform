@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    cluster: cluster-west
+    owner: platform-team
+    rbac.authorization.k8s.io/aggregate-to-admin: "true"
+    rbac.authorization.k8s.io/aggregate-to-edit: "true"
+  name: aggregate-gke-networking-edit
+rules:
+- apiGroups:
+  - networking.gke.io
+  resources:
+  - '*'
+  verbs:
+  - '*'
